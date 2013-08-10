@@ -1,0 +1,676 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/local/bin/node',
+1 verbose cli   '/usr/local/bin/npm',
+1 verbose cli   'install',
+1 verbose cli   '-g',
+1 verbose cli   'less' ]
+2 info using npm@1.3.5
+3 info using node@v0.10.15
+4 verbose cache add [ 'less', null ]
+5 verbose cache add name=undefined spec="less" args=["less",null]
+6 verbose parsed url { protocol: null,
+6 verbose parsed url   slashes: null,
+6 verbose parsed url   auth: null,
+6 verbose parsed url   host: null,
+6 verbose parsed url   port: null,
+6 verbose parsed url   hostname: null,
+6 verbose parsed url   hash: null,
+6 verbose parsed url   search: null,
+6 verbose parsed url   query: null,
+6 verbose parsed url   pathname: 'less',
+6 verbose parsed url   path: 'less',
+6 verbose parsed url   href: 'less' }
+7 silly lockFile 0b439cf4-less less
+8 verbose lock less /home/devang/.npm/0b439cf4-less.lock
+9 silly lockFile 0b439cf4-less less
+10 silly lockFile 0b439cf4-less less
+11 verbose addNamed [ 'less', '' ]
+12 verbose addNamed [ null, '*' ]
+13 silly lockFile e13833ab-less less@
+14 verbose lock less@ /home/devang/.npm/e13833ab-less.lock
+15 silly addNameRange { name: 'less', range: '*', hasData: false }
+16 verbose url raw less
+17 verbose url resolving [ 'https://registry.npmjs.org/', './less' ]
+18 verbose url resolved https://registry.npmjs.org/less
+19 info trying registry request attempt 1 at 00:45:28
+20 verbose etag "8IL2H8TRA98DEDUQ7LA06MQ5S"
+21 http GET https://registry.npmjs.org/less
+22 info retry will retry, error on last attempt: Error: tunneling socket could not be established, cause=139931363174208:error:140770FC:SSL routines:SSL23_GET_SERVER_HELLO:unknown protocol:../deps/openssl/openssl/ssl/s23_clnt.c:766:
+23 info trying registry request attempt 2 at 00:45:42
+24 verbose etag "8IL2H8TRA98DEDUQ7LA06MQ5S"
+25 http GET https://registry.npmjs.org/less
+26 info retry will retry, error on last attempt: Error: tunneling socket could not be established, cause=139931363174208:error:140770FC:SSL routines:SSL23_GET_SERVER_HELLO:unknown protocol:../deps/openssl/openssl/ssl/s23_clnt.c:766:
+27 info trying registry request attempt 3 at 00:46:42
+28 verbose etag "8IL2H8TRA98DEDUQ7LA06MQ5S"
+29 http GET https://registry.npmjs.org/less
+30 silly registry.get cb [ 304, undefined ]
+31 verbose etag less from cache
+32 silly addNameRange number 2 { name: 'less', range: '*', hasData: true }
+33 silly addNameRange versions [ 'less',
+33 silly addNameRange   [ '1.0.10',
+33 silly addNameRange     '1.0.11',
+33 silly addNameRange     '1.0.14',
+33 silly addNameRange     '1.0.18',
+33 silly addNameRange     '1.0.19',
+33 silly addNameRange     '1.0.21',
+33 silly addNameRange     '1.0.32',
+33 silly addNameRange     '1.0.36',
+33 silly addNameRange     '1.0.5',
+33 silly addNameRange     '1.0.40',
+33 silly addNameRange     '1.0.41',
+33 silly addNameRange     '1.0.44',
+33 silly addNameRange     '1.1.0',
+33 silly addNameRange     '1.1.1',
+33 silly addNameRange     '1.1.2',
+33 silly addNameRange     '1.1.4',
+33 silly addNameRange     '1.1.5',
+33 silly addNameRange     '1.1.6',
+33 silly addNameRange     '1.2.0',
+33 silly addNameRange     '1.2.1',
+33 silly addNameRange     '1.2.2',
+33 silly addNameRange     '1.3.0',
+33 silly addNameRange     '1.3.1',
+33 silly addNameRange     '1.3.2',
+33 silly addNameRange     '1.3.3',
+33 silly addNameRange     '1.4.0-b1',
+33 silly addNameRange     '1.4.0-b2',
+33 silly addNameRange     '1.4.0-b3',
+33 silly addNameRange     '1.4.0-b4',
+33 silly addNameRange     '1.4.0',
+33 silly addNameRange     '1.4.1',
+33 silly addNameRange     '1.4.2' ] ]
+34 verbose addNamed [ 'less', '1.4.2' ]
+35 verbose addNamed [ '1.4.2', '1.4.2' ]
+36 silly lockFile d48d9e91-less-1-4-2 less@1.4.2
+37 verbose lock less@1.4.2 /home/devang/.npm/d48d9e91-less-1-4-2.lock
+38 silly lockFile d48d9e91-less-1-4-2 less@1.4.2
+39 silly lockFile d48d9e91-less-1-4-2 less@1.4.2
+40 silly lockFile e13833ab-less less@
+41 silly lockFile e13833ab-less less@
+42 silly resolved [ { name: 'less',
+42 silly resolved     version: '1.4.2',
+42 silly resolved     description: 'Leaner CSS',
+42 silly resolved     homepage: 'http://lesscss.org',
+42 silly resolved     author: { name: 'Alexis Sellier', email: 'self@cloudhead.net' },
+42 silly resolved     contributors: [ [Object] ],
+42 silly resolved     bugs: { url: 'https://github.com/less/less.js/issues' },
+42 silly resolved     repository: { type: 'git', url: 'https://github.com/less/less.js.git' },
+42 silly resolved     bin: { lessc: './bin/lessc' },
+42 silly resolved     main: './lib/less/index',
+42 silly resolved     directories: { test: './test' },
+42 silly resolved     jam: { main: './dist/less-1.4.1.js' },
+42 silly resolved     engines: { node: '>=0.4.2' },
+42 silly resolved     scripts: { test: 'make test' },
+42 silly resolved     optionalDependencies:
+42 silly resolved      { mime: '1.2.x',
+42 silly resolved        request: '>=2.12.0',
+42 silly resolved        mkdirp: '~0.3.4',
+42 silly resolved        ycssmin: '>=1.0.1' },
+42 silly resolved     devDependencies: { diff: '~1.0' },
+42 silly resolved     keywords:
+42 silly resolved      [ 'compile less',
+42 silly resolved        'css nesting',
+42 silly resolved        'css variable',
+42 silly resolved        'css',
+42 silly resolved        'gradients css',
+42 silly resolved        'gradients css3',
+42 silly resolved        'less compiler',
+42 silly resolved        'less css',
+42 silly resolved        'less mixins',
+42 silly resolved        'less',
+42 silly resolved        'less.js',
+42 silly resolved        'lesscss',
+42 silly resolved        'mixins',
+42 silly resolved        'nested css',
+42 silly resolved        'parser',
+42 silly resolved        'preprocessor',
+42 silly resolved        'bootstrap css',
+42 silly resolved        'bootstrap less',
+42 silly resolved        'style',
+42 silly resolved        'styles',
+42 silly resolved        'stylesheet',
+42 silly resolved        'variables in css',
+42 silly resolved        'css less' ],
+42 silly resolved     licenses: [ [Object] ],
+42 silly resolved     readme: 'less.js\n=======\n\nThe **dynamic** stylesheet language.\n\n<http://lesscss.org>\n\nabout\n-----\n\nThis is the JavaScript, and now official, stable version of LESS.\n\nFor more information on the language and usage visit [lesscss.org](http://lesscss.org). More information also available [in our wiki](https://github.com/less/less.js/wiki)\n\nlicense\n-------\n\nSee `LICENSE` file.\n\n> Copyright (c) 2009-2013 Alexis Sellier & The Core Less Team\n',
+42 silly resolved     readmeFilename: 'README.md',
+42 silly resolved     dependencies:
+42 silly resolved      { mime: '1.2.x',
+42 silly resolved        request: '>=2.12.0',
+42 silly resolved        mkdirp: '~0.3.4',
+42 silly resolved        ycssmin: '>=1.0.1' },
+42 silly resolved     _id: 'less@1.4.2',
+42 silly resolved     _from: 'less@' } ]
+43 info install less@1.4.2 into /usr/local/lib
+44 info installOne less@1.4.2
+45 info /usr/local/lib/node_modules/less unbuild
+46 verbose tar unpack /home/devang/.npm/less/1.4.2/package.tgz
+47 silly lockFile 7a611c47--usr-local-lib-node-modules-less tar:///usr/local/lib/node_modules/less
+48 verbose lock tar:///usr/local/lib/node_modules/less /home/devang/.npm/7a611c47--usr-local-lib-node-modules-less.lock
+49 silly lockFile dd94ad56-evang-npm-less-1-4-2-package-tgz tar:///home/devang/.npm/less/1.4.2/package.tgz
+50 verbose lock tar:///home/devang/.npm/less/1.4.2/package.tgz /home/devang/.npm/dd94ad56-evang-npm-less-1-4-2-package-tgz.lock
+51 silly gunzTarPerm modes [ '755', '644' ]
+52 silly gunzTarPerm extractEntry package.json
+53 silly gunzTarPerm extractEntry .npmignore
+54 silly gunzTarPerm extractEntry README.md
+55 silly gunzTarPerm extractEntry LICENSE
+56 silly gunzTarPerm extractEntry Makefile
+57 silly gunzTarPerm extractEntry CONTRIBUTING.md
+58 silly gunzTarPerm extractEntry CHANGELOG.md
+59 silly gunzTarPerm extractEntry bin/lessc
+60 silly gunzTarPerm extractEntry build/amd.js
+61 silly gunzTarPerm extractEntry build/header.js
+62 silly gunzTarPerm extractEntry build/require-rhino.js
+63 silly gunzTarPerm extractEntry build/require.js
+64 silly gunzTarPerm extractEntry dist/less-1.1.0.js
+65 silly gunzTarPerm extractEntry dist/less-1.2.1.min.js
+66 silly gunzTarPerm extractEntry dist/less-1.2.2.js
+67 silly gunzTarPerm extractEntry dist/less-1.2.2.min.js
+68 silly gunzTarPerm extractEntry dist/less-1.3.0.js
+69 silly gunzTarPerm extractEntry dist/less-1.2.1.js
+70 silly gunzTarPerm extractEntry dist/less-1.3.1.js
+71 silly gunzTarPerm extractEntry dist/less-1.3.1.min.js
+72 silly gunzTarPerm extractEntry dist/less-1.3.2.js
+73 silly gunzTarPerm extractEntry dist/less-1.3.2.min.js
+74 silly gunzTarPerm extractEntry dist/less-1.3.3.js
+75 silly gunzTarPerm extractEntry dist/less-1.2.0.min.js
+76 silly gunzTarPerm extractEntry dist/less-1.3.3.min.js
+77 silly gunzTarPerm extractEntry dist/less-1.2.0.js
+78 silly gunzTarPerm extractEntry dist/less-1.4.0-beta.js
+79 silly gunzTarPerm extractEntry dist/less-1.1.6.min.js
+80 silly gunzTarPerm extractEntry dist/less-1.4.0-beta.min.js
+81 silly gunzTarPerm extractEntry dist/less-1.1.6.js
+82 silly gunzTarPerm extractEntry dist/less-1.4.0.js
+83 silly gunzTarPerm extractEntry dist/less-1.1.5.min.js
+84 silly gunzTarPerm extractEntry dist/less-1.4.0.min.js
+85 silly gunzTarPerm extractEntry dist/less-1.1.5.js
+86 silly gunzTarPerm extractEntry dist/less-1.4.1.js
+87 silly gunzTarPerm extractEntry dist/less-1.1.4.min.js
+88 silly gunzTarPerm extractEntry dist/less-1.4.1.min.js
+89 silly gunzTarPerm extractEntry dist/less-1.1.4.js
+90 silly gunzTarPerm extractEntry dist/less-1.4.2.js
+91 silly gunzTarPerm extractEntry dist/less-1.1.3.min.js
+92 silly gunzTarPerm extractEntry dist/less-1.4.2.min.js
+93 silly gunzTarPerm extractEntry dist/less-1.1.3.js
+94 silly gunzTarPerm extractEntry dist/less-rhino-1.1.3.js
+95 silly gunzTarPerm extractEntry dist/less-1.1.2.min.js
+96 silly gunzTarPerm extractEntry dist/less-rhino-1.1.5.js
+97 silly gunzTarPerm extractEntry dist/less-1.1.2.js
+98 silly gunzTarPerm extractEntry dist/less-rhino-1.3.1.js
+99 silly gunzTarPerm extractEntry dist/less-1.1.1.min.js
+100 silly gunzTarPerm extractEntry dist/less-rhino-1.3.2.js
+101 silly gunzTarPerm extractEntry dist/less-1.1.1.js
+102 silly gunzTarPerm extractEntry dist/less-rhino-1.3.3.js
+103 silly gunzTarPerm extractEntry dist/less-1.1.0.min.js
+104 silly gunzTarPerm extractEntry dist/less-rhino-1.4.0.js
+105 silly gunzTarPerm extractEntry dist/less-1.3.0.min.js
+106 silly gunzTarPerm extractEntry lib/less/browser.js
+107 silly gunzTarPerm extractEntry lib/less/extend-visitor.js
+108 silly gunzTarPerm extractEntry lib/less/functions.js
+109 silly gunzTarPerm extractEntry lib/less/import-visitor.js
+110 silly gunzTarPerm extractEntry lib/less/env.js
+111 silly gunzTarPerm extractEntry lib/less/colors.js
+112 silly gunzTarPerm extractEntry lib/less/lessc_helper.js
+113 silly gunzTarPerm extractEntry lib/less/parser.js
+114 silly gunzTarPerm extractEntry lib/less/rhino.js
+115 silly gunzTarPerm extractEntry lib/less/tree.js
+116 silly gunzTarPerm extractEntry lib/less/index.js
+117 silly gunzTarPerm extractEntry lib/less/visitor.js
+118 silly gunzTarPerm extractEntry lib/less/join-selector-visitor.js
+119 silly gunzTarPerm extractEntry lib/less/tree/alpha.js
+120 silly gunzTarPerm extractEntry lib/less/tree/expression.js
+121 silly gunzTarPerm extractEntry lib/less/tree/extend.js
+122 silly gunzTarPerm extractEntry lib/less/tree/import.js
+123 silly gunzTarPerm extractEntry lib/less/tree/javascript.js
+124 silly gunzTarPerm extractEntry lib/less/tree/element.js
+125 silly gunzTarPerm extractEntry lib/less/tree/media.js
+126 silly gunzTarPerm extractEntry lib/less/tree/mixin.js
+127 silly gunzTarPerm extractEntry lib/less/tree/negative.js
+128 silly gunzTarPerm extractEntry lib/less/tree/operation.js
+129 silly gunzTarPerm extractEntry lib/less/tree/paren.js
+130 silly gunzTarPerm extractEntry lib/less/tree/directive.js
+131 silly gunzTarPerm extractEntry lib/less/tree/quoted.js
+132 silly gunzTarPerm extractEntry lib/less/tree/dimension.js
+133 silly gunzTarPerm extractEntry lib/less/tree/rule.js
+134 silly gunzTarPerm extractEntry lib/less/tree/condition.js
+135 silly gunzTarPerm extractEntry lib/less/tree/ruleset.js
+136 silly gunzTarPerm extractEntry lib/less/tree/comment.js
+137 silly gunzTarPerm extractEntry lib/less/tree/selector.js
+138 silly gunzTarPerm extractEntry lib/less/tree/color.js
+139 silly gunzTarPerm extractEntry lib/less/tree/unicode-descriptor.js
+140 silly gunzTarPerm extractEntry lib/less/tree/call.js
+141 silly gunzTarPerm extractEntry lib/less/tree/url.js
+142 silly gunzTarPerm extractEntry lib/less/tree/assignment.js
+143 silly gunzTarPerm extractEntry lib/less/tree/value.js
+144 silly gunzTarPerm extractEntry lib/less/tree/anonymous.js
+145 silly gunzTarPerm extractEntry lib/less/tree/variable.js
+146 silly gunzTarPerm extractEntry lib/less/tree/keyword.js
+147 silly gunzTarPerm extractEntry test/browser-test-prepare.js
+148 silly gunzTarPerm extractEntry test/less-test.js
+149 silly gunzTarPerm extractEntry test/browser/common.js
+150 silly gunzTarPerm extractEntry test/browser/runner-rootpath.js
+151 silly gunzTarPerm extractEntry test/browser/jasmine.js
+152 silly gunzTarPerm extractEntry test/browser/runner-rootpath-relative.js
+153 silly gunzTarPerm extractEntry test/browser/jasmine-html.js
+154 silly gunzTarPerm extractEntry test/browser/runner-browser.js
+155 silly gunzTarPerm extractEntry test/browser/runner-relative-urls.js
+156 silly gunzTarPerm extractEntry test/browser/runner-legacy.js
+157 silly gunzTarPerm extractEntry test/browser/runner-main.js
+158 silly gunzTarPerm extractEntry test/browser/runner-production.js
+159 silly gunzTarPerm extractEntry test/browser/phantom-runner.js
+160 silly gunzTarPerm extractEntry test/browser/runner-errors.js
+161 silly gunzTarPerm extractEntry test/browser/css/relative-urls/urls.css
+162 silly gunzTarPerm extractEntry test/browser/css/rootpath/urls.css
+163 silly gunzTarPerm extractEntry test/browser/css/rootpath-relative/urls.css
+164 silly gunzTarPerm extractEntry test/browser/css/urls.css
+165 silly gunzTarPerm extractEntry test/browser/less/imports/urls.less
+166 silly gunzTarPerm extractEntry test/browser/less/imports/urls2.less
+167 silly gunzTarPerm extractEntry test/browser/less/relative-urls/urls.less
+168 silly gunzTarPerm extractEntry test/browser/less/rootpath/urls.less
+169 silly gunzTarPerm extractEntry test/browser/less/rootpath-relative/urls.less
+170 silly gunzTarPerm extractEntry test/browser/less/urls.less
+171 silly gunzTarPerm extractEntry test/browser/jasmine.css
+172 silly gunzTarPerm extractEntry test/browser/template.htm
+173 silly gunzTarPerm extractEntry test/css/lazy-eval.css
+174 silly gunzTarPerm extractEntry test/css/charsets.css
+175 silly gunzTarPerm extractEntry test/css/comments.css
+176 silly gunzTarPerm extractEntry test/css/compression/compression.css
+177 silly gunzTarPerm extractEntry test/css/css-3.css
+178 silly gunzTarPerm extractEntry test/css/css-escapes.css
+179 silly gunzTarPerm extractEntry test/css/css.css
+180 silly gunzTarPerm extractEntry test/css/debug/linenumbers-all.css
+181 silly gunzTarPerm extractEntry test/css/debug/linenumbers-comments.css
+182 silly gunzTarPerm extractEntry test/css/debug/linenumbers-mediaquery.css
+183 silly gunzTarPerm extractEntry test/css/extend-chaining.css
+184 silly gunzTarPerm extractEntry test/css/extend-clearfix.css
+185 silly gunzTarPerm extractEntry test/css/extend-exact.css
+186 silly gunzTarPerm extractEntry test/css/extend-media.css
+187 silly gunzTarPerm extractEntry test/css/extend-nest.css
+188 silly gunzTarPerm extractEntry test/css/extend-selector.css
+189 silly gunzTarPerm extractEntry test/css/extend.css
+190 silly gunzTarPerm extractEntry test/css/functions.css
+191 silly gunzTarPerm extractEntry test/css/ie-filters.css
+192 silly gunzTarPerm extractEntry test/css/import-interpolation.css
+193 silly gunzTarPerm extractEntry test/css/import-once.css
+194 silly gunzTarPerm extractEntry test/css/import.css
+195 silly gunzTarPerm extractEntry test/css/javascript.css
+196 silly gunzTarPerm extractEntry test/css/colors.css
+197 silly gunzTarPerm extractEntry test/css/legacy/legacy.css
+198 silly gunzTarPerm extractEntry test/css/media.css
+199 silly gunzTarPerm extractEntry test/css/mixins-args.css
+200 silly gunzTarPerm extractEntry test/css/mixins-closure.css
+201 silly gunzTarPerm extractEntry test/css/mixins-guards.css
+202 silly gunzTarPerm extractEntry test/css/mixins-important.css
+203 silly gunzTarPerm extractEntry test/css/mixins-named-args.css
+204 silly gunzTarPerm extractEntry test/css/mixins-nested.css
+205 silly gunzTarPerm extractEntry test/css/mixins-pattern.css
+206 silly gunzTarPerm extractEntry test/css/mixins.css
+207 silly gunzTarPerm extractEntry test/css/operations.css
+208 silly gunzTarPerm extractEntry test/css/parens.css
+209 silly gunzTarPerm extractEntry test/css/rulesets.css
+210 silly gunzTarPerm extractEntry test/css/scope.css
+211 silly gunzTarPerm extractEntry test/css/selectors.css
+212 silly gunzTarPerm extractEntry test/css/static-urls/urls.css
+213 silly gunzTarPerm extractEntry test/css/strings.css
+214 silly gunzTarPerm extractEntry test/css/urls.css
+215 silly gunzTarPerm extractEntry test/css/variables.css
+216 silly gunzTarPerm extractEntry test/css/whitespace.css
+217 silly gunzTarPerm extractEntry test/data/data-uri-fail.png
+218 silly gunzTarPerm extractEntry test/data/image.jpg
+219 silly gunzTarPerm extractEntry test/data/page.html
+220 silly gunzTarPerm extractEntry test/less/javascript.less
+221 silly gunzTarPerm extractEntry test/less/charsets.less
+222 silly gunzTarPerm extractEntry test/less/comments.less
+223 silly gunzTarPerm extractEntry test/less/compression/compression.less
+224 silly gunzTarPerm extractEntry test/less/css-3.less
+225 silly gunzTarPerm extractEntry test/less/css-escapes.less
+226 silly gunzTarPerm extractEntry test/less/css.less
+227 silly gunzTarPerm extractEntry test/less/debug/import/test.less
+228 silly gunzTarPerm extractEntry test/less/debug/linenumbers.less
+229 silly gunzTarPerm extractEntry test/less/errors/mixed-mixin-definition-args-2.txt
+230 silly gunzTarPerm extractEntry test/less/errors/add-mixed-units.less
+231 silly gunzTarPerm extractEntry test/less/errors/add-mixed-units2.less
+232 silly gunzTarPerm extractEntry test/less/errors/add-mixed-units2.txt
+233 silly gunzTarPerm extractEntry test/less/errors/bad-variable-declaration1.less
+234 silly gunzTarPerm extractEntry test/less/errors/bad-variable-declaration1.txt
+235 silly gunzTarPerm extractEntry test/less/errors/color-operation-error.less
+236 silly gunzTarPerm extractEntry test/less/errors/color-operation-error.txt
+237 silly gunzTarPerm extractEntry test/less/errors/comment-in-selector.less
+238 silly gunzTarPerm extractEntry test/less/errors/comment-in-selector.txt
+239 silly gunzTarPerm extractEntry test/less/errors/divide-mixed-units.less
+240 silly gunzTarPerm extractEntry test/less/errors/divide-mixed-units.txt
+241 silly gunzTarPerm extractEntry test/less/errors/extend-no-selector.less
+242 silly gunzTarPerm extractEntry test/less/errors/extend-no-selector.txt
+243 silly gunzTarPerm extractEntry test/less/errors/extend-not-at-end.less
+244 silly gunzTarPerm extractEntry test/less/errors/extend-not-at-end.txt
+245 silly gunzTarPerm extractEntry test/less/errors/import-missing.less
+246 silly gunzTarPerm extractEntry test/less/errors/import-missing.txt
+247 silly gunzTarPerm extractEntry test/less/errors/import-no-semi.less
+248 silly gunzTarPerm extractEntry test/less/errors/import-no-semi.txt
+249 silly gunzTarPerm extractEntry test/less/errors/import-subfolder1.less
+250 silly gunzTarPerm extractEntry test/less/errors/import-subfolder1.txt
+251 silly gunzTarPerm extractEntry test/less/errors/import-subfolder2.less
+252 silly gunzTarPerm extractEntry test/less/errors/import-subfolder2.txt
+253 silly gunzTarPerm extractEntry test/less/errors/imports/import-subfolder1.less
+254 silly gunzTarPerm extractEntry test/less/errors/imports/import-subfolder2.less
+255 silly gunzTarPerm extractEntry test/less/errors/imports/import-test.less
+256 silly gunzTarPerm extractEntry test/less/errors/imports/subfolder/mixin-not-defined.less
+257 silly gunzTarPerm extractEntry test/less/errors/imports/subfolder/parse-error-curly-bracket.less
+258 silly gunzTarPerm extractEntry test/less/errors/javascript-error.less
+259 silly gunzTarPerm extractEntry test/less/errors/javascript-error.txt
+260 silly gunzTarPerm extractEntry test/less/errors/mixed-mixin-definition-args-1.less
+261 silly gunzTarPerm extractEntry test/less/errors/mixed-mixin-definition-args-1.txt
+262 silly gunzTarPerm extractEntry test/less/errors/mixed-mixin-definition-args-2.less
+263 silly gunzTarPerm extractEntry test/less/errors/add-mixed-units.txt
+264 silly gunzTarPerm extractEntry test/less/errors/mixin-not-defined.less
+265 silly gunzTarPerm extractEntry test/less/errors/mixin-not-defined.txt
+266 silly gunzTarPerm extractEntry test/less/errors/mixin-not-matched.less
+267 silly gunzTarPerm extractEntry test/less/errors/mixin-not-matched.txt
+268 silly gunzTarPerm extractEntry test/less/errors/mixin-not-matched2.less
+269 silly gunzTarPerm extractEntry test/less/errors/mixin-not-matched2.txt
+270 silly gunzTarPerm extractEntry test/less/errors/multiply-mixed-units.less
+271 silly gunzTarPerm extractEntry test/less/errors/multiply-mixed-units.txt
+272 silly gunzTarPerm extractEntry test/less/errors/parens-error-1.less
+273 silly gunzTarPerm extractEntry test/less/errors/parens-error-1.txt
+274 silly gunzTarPerm extractEntry test/less/errors/parens-error-2.less
+275 silly gunzTarPerm extractEntry test/less/errors/parens-error-2.txt
+276 silly gunzTarPerm extractEntry test/less/errors/parens-error-3.less
+277 silly gunzTarPerm extractEntry test/less/errors/parens-error-3.txt
+278 silly gunzTarPerm extractEntry test/less/errors/parse-error-curly-bracket.less
+279 silly gunzTarPerm extractEntry test/less/errors/parse-error-curly-bracket.txt
+280 silly gunzTarPerm extractEntry test/less/errors/parse-error-missing-bracket.less
+281 silly gunzTarPerm extractEntry test/less/errors/parse-error-missing-bracket.txt
+282 silly gunzTarPerm extractEntry test/less/errors/parse-error-with-import.less
+283 silly gunzTarPerm extractEntry test/less/errors/parse-error-with-import.txt
+284 silly gunzTarPerm extractEntry test/less/errors/property-ie5-hack.less
+285 silly gunzTarPerm extractEntry test/less/errors/property-ie5-hack.txt
+286 silly gunzTarPerm extractEntry test/less/errors/property-in-root.less
+287 silly gunzTarPerm extractEntry test/less/errors/property-in-root.txt
+288 silly gunzTarPerm extractEntry test/less/errors/property-in-root2.less
+289 silly gunzTarPerm extractEntry test/less/errors/property-in-root2.txt
+290 silly gunzTarPerm extractEntry test/less/errors/property-in-root3.less
+291 silly gunzTarPerm extractEntry test/less/errors/property-in-root3.txt
+292 silly gunzTarPerm extractEntry test/less/errors/recursive-variable.less
+293 silly gunzTarPerm extractEntry test/less/errors/recursive-variable.txt
+294 silly gunzTarPerm extractEntry test/less/extend-chaining.less
+295 silly gunzTarPerm extractEntry test/less/extend-clearfix.less
+296 silly gunzTarPerm extractEntry test/less/extend-exact.less
+297 silly gunzTarPerm extractEntry test/less/extend-media.less
+298 silly gunzTarPerm extractEntry test/less/extend-nest.less
+299 silly gunzTarPerm extractEntry test/less/extend-selector.less
+300 silly gunzTarPerm extractEntry test/less/extend.less
+301 silly gunzTarPerm extractEntry test/less/functions.less
+302 silly gunzTarPerm extractEntry test/less/ie-filters.less
+303 silly gunzTarPerm extractEntry test/less/import/import-test-a.less
+304 silly gunzTarPerm extractEntry test/less/import/deeper/import-once-test-a.less
+305 silly gunzTarPerm extractEntry test/less/import/import-charset-test.less
+306 silly gunzTarPerm extractEntry test/less/import/import-interpolation.less
+307 silly gunzTarPerm extractEntry test/less/import/import-interpolation2.less
+308 silly gunzTarPerm extractEntry test/less/import/import-once-test-c.less
+309 silly gunzTarPerm extractEntry test/less/import/import-and-relative-paths-test.less
+310 silly gunzTarPerm extractEntry test/less/import/import-test-b.less
+311 silly gunzTarPerm extractEntry test/less/import/import-test-c.less
+312 silly gunzTarPerm extractEntry test/less/import/import-test-d.css
+313 silly gunzTarPerm extractEntry test/less/import/import-test-e.less
+314 silly gunzTarPerm extractEntry test/less/import/imports/font.less
+315 silly gunzTarPerm extractEntry test/less/import/imports/logo.less
+316 silly gunzTarPerm extractEntry test/less/import/urls.less
+317 silly gunzTarPerm extractEntry test/less/import-interpolation.less
+318 silly gunzTarPerm extractEntry test/less/import-once.less
+319 silly gunzTarPerm extractEntry test/less/import.less
+320 silly gunzTarPerm extractEntry test/less/colors.less
+321 silly gunzTarPerm extractEntry test/less/lazy-eval.less
+322 silly gunzTarPerm extractEntry test/less/legacy/legacy.less
+323 silly gunzTarPerm extractEntry test/less/media.less
+324 silly gunzTarPerm extractEntry test/less/mixins-args.less
+325 silly gunzTarPerm extractEntry test/less/mixins-closure.less
+326 silly gunzTarPerm extractEntry test/less/mixins-guards.less
+327 silly gunzTarPerm extractEntry test/less/mixins-important.less
+328 silly gunzTarPerm extractEntry test/less/mixins-named-args.less
+329 silly gunzTarPerm extractEntry test/less/mixins-nested.less
+330 silly gunzTarPerm extractEntry test/less/mixins-pattern.less
+331 silly gunzTarPerm extractEntry test/less/mixins.less
+332 silly gunzTarPerm extractEntry test/less/operations.less
+333 silly gunzTarPerm extractEntry test/less/parens.less
+334 silly gunzTarPerm extractEntry test/less/rulesets.less
+335 silly gunzTarPerm extractEntry test/less/scope.less
+336 silly gunzTarPerm extractEntry test/less/selectors.less
+337 silly gunzTarPerm extractEntry test/less/static-urls/urls.less
+338 silly gunzTarPerm extractEntry test/less/strings.less
+339 silly gunzTarPerm extractEntry test/less/urls.less
+340 silly gunzTarPerm extractEntry test/less/variables.less
+341 silly gunzTarPerm extractEntry test/less/whitespace.less
+342 silly gunzTarPerm extractEntry benchmark/less-benchmark.js
+343 silly gunzTarPerm extractEntry benchmark/benchmark.less
+344 silly lockFile 7a611c47--usr-local-lib-node-modules-less tar:///usr/local/lib/node_modules/less
+345 silly lockFile 7a611c47--usr-local-lib-node-modules-less tar:///usr/local/lib/node_modules/less
+346 silly lockFile dd94ad56-evang-npm-less-1-4-2-package-tgz tar:///home/devang/.npm/less/1.4.2/package.tgz
+347 silly lockFile dd94ad56-evang-npm-less-1-4-2-package-tgz tar:///home/devang/.npm/less/1.4.2/package.tgz
+348 info preinstall less@1.4.2
+349 verbose readDependencies using package.json deps
+350 verbose readDependencies using package.json deps
+351 verbose cache add [ 'mime@1.2.x', null ]
+352 verbose cache add name=undefined spec="mime@1.2.x" args=["mime@1.2.x",null]
+353 verbose parsed url { protocol: null,
+353 verbose parsed url   slashes: null,
+353 verbose parsed url   auth: null,
+353 verbose parsed url   host: null,
+353 verbose parsed url   port: null,
+353 verbose parsed url   hostname: null,
+353 verbose parsed url   hash: null,
+353 verbose parsed url   search: null,
+353 verbose parsed url   query: null,
+353 verbose parsed url   pathname: 'mime@1.2.x',
+353 verbose parsed url   path: 'mime@1.2.x',
+353 verbose parsed url   href: 'mime@1.2.x' }
+354 verbose cache add name="mime" spec="1.2.x" args=["mime","1.2.x"]
+355 verbose parsed url { protocol: null,
+355 verbose parsed url   slashes: null,
+355 verbose parsed url   auth: null,
+355 verbose parsed url   host: null,
+355 verbose parsed url   port: null,
+355 verbose parsed url   hostname: null,
+355 verbose parsed url   hash: null,
+355 verbose parsed url   search: null,
+355 verbose parsed url   query: null,
+355 verbose parsed url   pathname: '1.2.x',
+355 verbose parsed url   path: '1.2.x',
+355 verbose parsed url   href: '1.2.x' }
+356 verbose addNamed [ 'mime', '1.2.x' ]
+357 verbose addNamed [ null, '>=1.2.0-0 <1.3.0-0' ]
+358 silly lockFile 087d5967-mime-1-2-x mime@1.2.x
+359 verbose lock mime@1.2.x /home/devang/.npm/087d5967-mime-1-2-x.lock
+360 verbose cache add [ 'request@>=2.12.0', null ]
+361 verbose cache add name=undefined spec="request@>=2.12.0" args=["request@>=2.12.0",null]
+362 verbose parsed url { protocol: null,
+362 verbose parsed url   slashes: null,
+362 verbose parsed url   auth: null,
+362 verbose parsed url   host: null,
+362 verbose parsed url   port: null,
+362 verbose parsed url   hostname: null,
+362 verbose parsed url   hash: null,
+362 verbose parsed url   search: null,
+362 verbose parsed url   query: null,
+362 verbose parsed url   pathname: 'request@%3E=2.12.0',
+362 verbose parsed url   path: 'request@%3E=2.12.0',
+362 verbose parsed url   href: 'request@%3E=2.12.0' }
+363 verbose cache add name="request" spec=">=2.12.0" args=["request",">=2.12.0"]
+364 verbose parsed url { protocol: null,
+364 verbose parsed url   slashes: null,
+364 verbose parsed url   auth: null,
+364 verbose parsed url   host: null,
+364 verbose parsed url   port: null,
+364 verbose parsed url   hostname: null,
+364 verbose parsed url   hash: null,
+364 verbose parsed url   search: null,
+364 verbose parsed url   query: null,
+364 verbose parsed url   pathname: '%3E=2.12.0',
+364 verbose parsed url   path: '%3E=2.12.0',
+364 verbose parsed url   href: '%3E=2.12.0' }
+365 verbose addNamed [ 'request', '>=2.12.0' ]
+366 verbose addNamed [ null, '>=2.12.0' ]
+367 silly lockFile 60450e87-request-2-12-0 request@>=2.12.0
+368 verbose lock request@>=2.12.0 /home/devang/.npm/60450e87-request-2-12-0.lock
+369 verbose cache add [ 'mkdirp@~0.3.4', null ]
+370 verbose cache add name=undefined spec="mkdirp@~0.3.4" args=["mkdirp@~0.3.4",null]
+371 verbose parsed url { protocol: null,
+371 verbose parsed url   slashes: null,
+371 verbose parsed url   auth: null,
+371 verbose parsed url   host: null,
+371 verbose parsed url   port: null,
+371 verbose parsed url   hostname: null,
+371 verbose parsed url   hash: null,
+371 verbose parsed url   search: null,
+371 verbose parsed url   query: null,
+371 verbose parsed url   pathname: 'mkdirp@~0.3.4',
+371 verbose parsed url   path: 'mkdirp@~0.3.4',
+371 verbose parsed url   href: 'mkdirp@~0.3.4' }
+372 verbose cache add name="mkdirp" spec="~0.3.4" args=["mkdirp","~0.3.4"]
+373 verbose parsed url { protocol: null,
+373 verbose parsed url   slashes: null,
+373 verbose parsed url   auth: null,
+373 verbose parsed url   host: null,
+373 verbose parsed url   port: null,
+373 verbose parsed url   hostname: null,
+373 verbose parsed url   hash: null,
+373 verbose parsed url   search: null,
+373 verbose parsed url   query: null,
+373 verbose parsed url   pathname: '~0.3.4',
+373 verbose parsed url   path: '~0.3.4',
+373 verbose parsed url   href: '~0.3.4' }
+374 verbose addNamed [ 'mkdirp', '~0.3.4' ]
+375 verbose addNamed [ null, '>=0.3.4-0 <0.4.0-0' ]
+376 silly lockFile f185e6bf-mkdirp-0-3-4 mkdirp@~0.3.4
+377 verbose lock mkdirp@~0.3.4 /home/devang/.npm/f185e6bf-mkdirp-0-3-4.lock
+378 silly addNameRange { name: 'mime', range: '>=1.2.0-0 <1.3.0-0', hasData: false }
+379 verbose cache add [ 'ycssmin@>=1.0.1', null ]
+380 verbose cache add name=undefined spec="ycssmin@>=1.0.1" args=["ycssmin@>=1.0.1",null]
+381 verbose parsed url { protocol: null,
+381 verbose parsed url   slashes: null,
+381 verbose parsed url   auth: null,
+381 verbose parsed url   host: null,
+381 verbose parsed url   port: null,
+381 verbose parsed url   hostname: null,
+381 verbose parsed url   hash: null,
+381 verbose parsed url   search: null,
+381 verbose parsed url   query: null,
+381 verbose parsed url   pathname: 'ycssmin@%3E=1.0.1',
+381 verbose parsed url   path: 'ycssmin@%3E=1.0.1',
+381 verbose parsed url   href: 'ycssmin@%3E=1.0.1' }
+382 verbose cache add name="ycssmin" spec=">=1.0.1" args=["ycssmin",">=1.0.1"]
+383 verbose parsed url { protocol: null,
+383 verbose parsed url   slashes: null,
+383 verbose parsed url   auth: null,
+383 verbose parsed url   host: null,
+383 verbose parsed url   port: null,
+383 verbose parsed url   hostname: null,
+383 verbose parsed url   hash: null,
+383 verbose parsed url   search: null,
+383 verbose parsed url   query: null,
+383 verbose parsed url   pathname: '%3E=1.0.1',
+383 verbose parsed url   path: '%3E=1.0.1',
+383 verbose parsed url   href: '%3E=1.0.1' }
+384 verbose addNamed [ 'ycssmin', '>=1.0.1' ]
+385 verbose addNamed [ null, '>=1.0.1' ]
+386 silly lockFile 4d453523-ycssmin-1-0-1 ycssmin@>=1.0.1
+387 verbose lock ycssmin@>=1.0.1 /home/devang/.npm/4d453523-ycssmin-1-0-1.lock
+388 silly addNameRange { name: 'request', range: '>=2.12.0', hasData: false }
+389 verbose url raw mime
+390 verbose url resolving [ 'https://registry.npmjs.org/', './mime' ]
+391 verbose url resolved https://registry.npmjs.org/mime
+392 info trying registry request attempt 1 at 00:46:43
+393 http GET https://registry.npmjs.org/mime
+394 silly addNameRange { name: 'mkdirp', range: '>=0.3.4-0 <0.4.0-0', hasData: false }
+395 verbose url raw request
+396 verbose url resolving [ 'https://registry.npmjs.org/', './request' ]
+397 verbose url resolved https://registry.npmjs.org/request
+398 info trying registry request attempt 1 at 00:46:43
+399 http GET https://registry.npmjs.org/request
+400 silly addNameRange { name: 'ycssmin', range: '>=1.0.1', hasData: false }
+401 verbose url raw mkdirp
+402 verbose url resolving [ 'https://registry.npmjs.org/', './mkdirp' ]
+403 verbose url resolved https://registry.npmjs.org/mkdirp
+404 info trying registry request attempt 1 at 00:46:43
+405 http GET https://registry.npmjs.org/mkdirp
+406 verbose url raw ycssmin
+407 verbose url resolving [ 'https://registry.npmjs.org/', './ycssmin' ]
+408 verbose url resolved https://registry.npmjs.org/ycssmin
+409 info trying registry request attempt 1 at 00:46:43
+410 http GET https://registry.npmjs.org/ycssmin
+411 info retry will retry, error on last attempt: Error: tunneling socket could not be established, cause=139931363174208:error:140770FC:SSL routines:SSL23_GET_SERVER_HELLO:unknown protocol:../deps/openssl/openssl/ssl/s23_clnt.c:766:
+412 info retry will retry, error on last attempt: Error: tunneling socket could not be established, cause=139931363174208:error:140770FC:SSL routines:SSL23_GET_SERVER_HELLO:unknown protocol:../deps/openssl/openssl/ssl/s23_clnt.c:766:
+413 info retry will retry, error on last attempt: Error: tunneling socket could not be established, cause=139931363174208:error:140770FC:SSL routines:SSL23_GET_SERVER_HELLO:unknown protocol:../deps/openssl/openssl/ssl/s23_clnt.c:766:
+414 info retry will retry, error on last attempt: Error: tunneling socket could not be established, cause=139931363174208:error:140770FC:SSL routines:SSL23_GET_SERVER_HELLO:unknown protocol:../deps/openssl/openssl/ssl/s23_clnt.c:766:
+415 info trying registry request attempt 2 at 00:46:53
+416 http GET https://registry.npmjs.org/mime
+417 info retry will retry, error on last attempt: Error: tunneling socket could not be established, cause=139931363174208:error:140770FC:SSL routines:SSL23_GET_SERVER_HELLO:unknown protocol:../deps/openssl/openssl/ssl/s23_clnt.c:766:
+418 info trying registry request attempt 2 at 00:46:54
+419 http GET https://registry.npmjs.org/mkdirp
+420 info trying registry request attempt 2 at 00:46:54
+421 http GET https://registry.npmjs.org/ycssmin
+422 info retry will retry, error on last attempt: Error: tunneling socket could not be established, cause=139931363174208:error:140770FC:SSL routines:SSL23_GET_SERVER_HELLO:unknown protocol:../deps/openssl/openssl/ssl/s23_clnt.c:766:
+423 info trying registry request attempt 2 at 00:46:56
+424 http GET https://registry.npmjs.org/request
+425 info retry will retry, error on last attempt: Error: tunneling socket could not be established, cause=139931363174208:error:140770FC:SSL routines:SSL23_GET_SERVER_HELLO:unknown protocol:../deps/openssl/openssl/ssl/s23_clnt.c:766:
+426 info retry will retry, error on last attempt: Error: tunneling socket could not be established, cause=139931363174208:error:140770FC:SSL routines:SSL23_GET_SERVER_HELLO:unknown protocol:../deps/openssl/openssl/ssl/s23_clnt.c:766:
+427 info trying registry request attempt 3 at 00:47:54
+428 http GET https://registry.npmjs.org/mime
+429 silly lockFile 087d5967-mime-1-2-x mime@1.2.x
+430 silly lockFile 087d5967-mime-1-2-x mime@1.2.x
+431 warn optional dep failed, continuing mime@1.2.x
+432 verbose optional dep failed, continuing [ 'mime@1.2.x',
+432 verbose optional dep failed, continuing   { [Error: tunneling socket could not be established, cause=139931363174208:error:140770FC:SSL routines:SSL23_GET_SERVER_HELLO:unknown protocol:../deps/openssl/openssl/ssl/s23_clnt.c:766:
+432 verbose optional dep failed, continuing   ] code: 'ECONNRESET' } ]
+433 info trying registry request attempt 3 at 00:47:55
+434 http GET https://registry.npmjs.org/mkdirp
+435 silly lockFile f185e6bf-mkdirp-0-3-4 mkdirp@~0.3.4
+436 silly lockFile f185e6bf-mkdirp-0-3-4 mkdirp@~0.3.4
+437 warn optional dep failed, continuing mkdirp@~0.3.4
+438 verbose optional dep failed, continuing [ 'mkdirp@~0.3.4',
+438 verbose optional dep failed, continuing   { [Error: tunneling socket could not be established, cause=139931363174208:error:140770FC:SSL routines:SSL23_GET_SERVER_HELLO:unknown protocol:../deps/openssl/openssl/ssl/s23_clnt.c:766:
+438 verbose optional dep failed, continuing   ] code: 'ECONNRESET' } ]
+439 info trying registry request attempt 3 at 00:47:56
+440 http GET https://registry.npmjs.org/request
+441 silly lockFile 60450e87-request-2-12-0 request@>=2.12.0
+442 silly lockFile 60450e87-request-2-12-0 request@>=2.12.0
+443 warn optional dep failed, continuing request@>=2.12.0
+444 verbose optional dep failed, continuing [ 'request@>=2.12.0',
+444 verbose optional dep failed, continuing   { [Error: tunneling socket could not be established, cause=139931363174208:error:140770FC:SSL routines:SSL23_GET_SERVER_HELLO:unknown protocol:../deps/openssl/openssl/ssl/s23_clnt.c:766:
+444 verbose optional dep failed, continuing   ] code: 'ECONNRESET' } ]
+445 info trying registry request attempt 3 at 00:47:57
+446 http GET https://registry.npmjs.org/ycssmin
+447 silly lockFile 4d453523-ycssmin-1-0-1 ycssmin@>=1.0.1
+448 silly lockFile 4d453523-ycssmin-1-0-1 ycssmin@>=1.0.1
+449 warn optional dep failed, continuing ycssmin@>=1.0.1
+450 verbose optional dep failed, continuing [ 'ycssmin@>=1.0.1',
+450 verbose optional dep failed, continuing   { [Error: tunneling socket could not be established, cause=139931363174208:error:140770FC:SSL routines:SSL23_GET_SERVER_HELLO:unknown protocol:../deps/openssl/openssl/ssl/s23_clnt.c:766:
+450 verbose optional dep failed, continuing   ] code: 'ECONNRESET' } ]
+451 silly resolved []
+452 verbose about to build /usr/local/lib/node_modules/less
+453 info build /usr/local/lib/node_modules/less
+454 verbose linkStuff [ true,
+454 verbose linkStuff   '/usr/local/lib/node_modules',
+454 verbose linkStuff   true,
+454 verbose linkStuff   '/usr/local/lib/node_modules' ]
+455 info linkStuff less@1.4.2
+456 verbose linkBins less@1.4.2
+457 verbose link bins [ { lessc: './bin/lessc' }, '/usr/local/bin', true ]
+458 verbose linkMans less@1.4.2
+459 verbose rebuildBundles less@1.4.2
+460 info /usr/local/lib/node_modules/less unbuild
+461 info preuninstall less@1.4.2
+462 info uninstall less@1.4.2
+463 verbose true,/usr/local/lib/node_modules,/usr/local/lib/node_modules unbuild less@1.4.2
+464 verbose /usr/local/bin,[object Object] binRoot
+465 info postuninstall less@1.4.2
+466 error Refusing to delete: /usr/local/bin/lessc not in /usr/local/lib/node_modules/less
+File exists: /usr/local/bin/lessc
+Move it away, and try again.
+467 error System Linux 3.5.0-37-generic
+468 error command "/usr/local/bin/node" "/usr/local/bin/npm" "install" "-g" "less"
+469 error cwd /home/devang/rails_projects/Sell
+470 error node -v v0.10.15
+471 error npm -v 1.3.5
+472 error path /usr/local/bin/lessc
+473 error code EEXIST
+474 verbose exit [ 1, true ]
